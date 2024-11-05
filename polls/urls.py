@@ -84,4 +84,4 @@ def add_game(request, add_game:AddGameSchema):
     
 @api.get("/game/{game_id}", response=GameSchema)
 def get_game(request, game_id:int):
-    return Game.objects.get(pk=game_id)
+    return Game.objects.get(pk=game_id) 
